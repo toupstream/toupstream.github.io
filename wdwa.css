@@ -1,0 +1,5 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "myFont";
+  src: url("/font/c0.ttf");
+}
