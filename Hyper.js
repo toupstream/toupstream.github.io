@@ -868,9 +868,9 @@ function draw() {
   }
 }
 
-function windowResized() {
-  resizeCanvas(windowWidth, windowHeight, WEBGL);
-}
+// function windowResized() {
+//   resizeCanvas(windowWidth, windowHeight, WEBGL);
+// }
 
 // function mouseMoved() {
 // rotateY(mouseX + mouseY);
