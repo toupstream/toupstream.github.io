@@ -1,571 +1,95 @@
 <!DOCTYPE html>
-<html>
-<head>
+<html lang="en">
+  <head>
     <meta charset="UTF-8">
     <title>Upstream</title>
-    <meta name="description" content="An artist.">
-	<meta name="keywords" content="digital art, net art">
-		
-  <link href="post.css" rel="stylesheet" type="text/css">
-  <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
-  <script type="text/javascript" src="jquery.js"></script>
-  <script>var __adobewebfontsappname__="dreamweaver"</script>
-  <script src="http://use.edgefonts.net/iceberg:n4:default;geostar-fill:n4:default;black-ops-one:n4:default;atomic-age:n4:default;questrial:n4:default;open-sans:n4:default;maven-pro:n4:default;cantarell:n4:default.js" type="text/javascript"></script>
-
-</head>
-	<body data-gr-c-s-loaded="true">
-		<div id="bg"></div>
-			<div id="header">
-				<a class="title" href="index.html">Upstream</a><br>
-				<br>
-		</div>
+    <!--<script src="p5.js" type="text/javascript"></script>-->
+    <script src="libraries/p5.js" type="text/javascript"></script>
+    <script src="libraries/p5.dom.js" type="text/javascript"></script>
+    <script src="libraries/p5.sound.js" type="text/javascript"></script>
+    <script src="sketch.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    
+    <link rel = "stylesheet" href = "style.css">
+    
+  </head>
+  <body>
+    <header id ="nav">
+      <nav>
+        <ul>
+          <li data-link = "index.html"><a href = "index.html" class = "navTag">Upstream</a></li>
+          <li data-link = "spread.html"><a href = "spread.html" class = "navTag">Spread</a></li>
+          <li data-link = "profile.html"><a href = "profile.html" class = "navTag">Profile</a></li>
+          <li data-link = "index_zh.html"><a href = "index_zh.html" class = "navTag">Eng / 中文</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="catalog" id = "content" data-expand = "expand">
+      <!--<div class="leftboard"></div>-->
+      <!--<div class="rightboard"></div>-->
+        <ul>
+          <li class = "eachContent beforeExpand" ><div class="leftspan"><p class="expandText">Design fiction is creating a story with visual materials along the texts. It appears that more abstract visual elements are presented in this medium. That means it gives you more freedom of expression, and less effort. (actually not)</p><p>Interactive Narrativity</p><h1>Fiction</h1></div>
+              <div class="rightspan"><div class="overlay"><div class="imgBox"><img src="Images/inter.png" alt="Interdimensional"></div><div class="imgBox"><img src="Images/climate.png" alt="Climate" ></div><div class="imgBox"><img src="Images/hyper.png" alt="HyperLoading" ></div></div>
+              <!--<div class="imgBox"><img src="Images/lifeOfDots.png" alt="Life of Dots" ></div>-->
+              <p><span class = "contentSelector"  data-link = "content/interdimensional.html">Interdimensional,</span><span class = "contentSelector" data-link = "content/climate.html"> Climate,</span><span class = "contentSelector" data-link = "content/hyperloading.html"> Hyper Loading,</span><span class = "contentSelector" data-link = "content/lifeOfDots.html"> Life of Dots</span></p></div>
+          </li>
+          <li class = "eachContent beforeExpand" ><div class="leftspan"><p class="expandText">Conceiving design from technical perspective makes you a better nerd. Despite human computer interaction, digital elements also interact with each other. Exploring various interactions, discovering visual patterns and repeating them with different visual materials; these are methods always lead to visual tools.</p><p>Visual Tools</p><h1>Interaction</h1></div>
+            <div class="rightspan"><div class="overlay"><div class="imgBox"><img src="Images/collage.png" alt="Collage" ></div><div class="imgBox"><img src="Images/collage2.png" alt="Collage" ></div><div class="imgBox"><img src="Images/port.png" alt="Port" ></div></div><p><span class = "contentSelector" data-link = "content/collage.html"> Collage,</span><span class = "contentSelector" data-link = "content/port.html">Hyper Portal</span></p></div></li>
+          <li class = "eachContent beforeExpand" ><div class="leftspan"><p class="expandText">At some point you don’t have any specific thoughts, but some feelings or moods are filling your mind. That’s the right moment to express yourself using visual materials.</p><p>Visual Exercise</p><h1>Emotion</h1></div>
+          <div class="rightspan"><div class="overlay"><div class="imgBox"><img src="Images/lands.png" alt="Landscape Scroll" ></div><div class="imgBox"><img src="Images/tribe.png" alt="Rise of Tribe" ></div><div class="imgBox"><img src="Images/sketches.png" alt="Sketches" ></div></div><p><span class = "contentSelector" data-link = "content/senseOfBeing.html">Sense of Being,</span><span class = "contentSelector" data-link = "content/riseOfTribe.html"> Rise of Tribe,</span><span class = "contentSelector" data-link = "content/sketches.html">Sketches</span></p></div></li>
+          <li class = "eachContent beforeExpand" ><div class="leftspan"><p class="expandText">While an artist reaching the soul by creating, thou shall allow to play it hard. The design doesn’t have to stick with specific methods or subjects; fiction, emotion and interaction can both take part in the artwork.</p><p>Researches</p><h1>Comprehension</h1></div>
+          <div class="rightspan"><div class="overlay"><div class="imgBox"><img src="Images/leak.png" alt="Degital Leak Responding" ></div><div class="imgBox"><img src="Images/leakblog.png" alt="Digtial Incubator" ></div><div class="imgBox"><img src="Images/leaklogo.png" alt="Digtial Incubator" ></div></div><p><span class = "contentSelector" data-link = "content/digitalLeak.html"> Digital Leak Responding</span></p></div></li>
+        </ul>
+      
+      
+    </section>
+    <footer id = "dir">
+      <span id = "mail" data-link = "#"><a href = "#" class = "dirTag">toupstream@gmail.com</a></span>
+      <ul>
+          <li data-link = "https://github.com/Uperstream"><a href = "https://github.com/Uperstream" class = "dirTag"><span></span>Git</a></li>
+          <li data-link = "https://www.instagram.com/toupstream/"><a href = "https://www.instagram.com/toupstream/" class = "dirTag"><span></span>Ins</a></li>
+      </ul>
+    </footer>
+    
+    <div id="tut" data-texts = "Opps, I’m taking your mouse, </br>because it is an user-enemy design ;)" data-lefta = "screw you" data-righta = "I'm Fine"></div>
+    
+    <script>
+        // $( "div" ).mousemove(function( event ) {
+        //   var pageCoords = "( " + event.pageX + ", " + event.pageY + " )";
+        //   var clientCoords = "( " + event.clientX + ", " + event.clientY + " )";
+        //   $( "span" ).first().text( "( event.pageX, event.pageY ) : " + pageCoords );
+        //   $( "span" ).last().text( "( event.clientX, event.clientY ) : " + clientCoords );
+        // });
+        //if mousemove
+        //check direction "mouseMoveP-mousemove"
+        //if horizontal "y<20&&x>50"
+        //  if x>0
+        //    FocusHorizontal(1)
+        //  else if x<0
+        //    FocusHorizontal(-1)
+        //else if vertical
+        //  if y>0
+        //    FocusVertical(1)
+        //  if y<0
+        //    FocusVertical(-1)
         
+        // float: mouseMoveP;
+        //array: columnsOfFocus [4,0,0,0]; elements [nav, li0,li1,li2,li3, footer]
         
+        //function FocusVertical(inc){
+        //  elements[focusIndexV].removeClass(expand);
+        //  focusIndexV+=inc;
+        //  elements[focusIndexV].addClass(expand);  // expanding the html element        
+        //}
         
+        //function FocusHorizontal(){
+        //  elements[focusIndexH].removeClass(highlight);
+        //  focusIndexH+=inc;
+        //  elements[focusIndexH].addClass(highlight);
+        //}
         
-	        <div class="cell">
-				<div class="framed align-right" >
-					<img id="myPic" src="Images/Hyperloading.jpg" alt="Hyperloading">
-				</div>
-				<div class="caption-box"><span class="caption"><button id="myBtn">Hyper Loading, 2017</button>
-				<!--<a href="Hyper.html" target="_blank">Hyperloading, 2017</a>-->
-				</span></div>
-			</div>
-			<h2>Modal Example</h2>
-
-<!-- Trigger/Open The Modal -->
-
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-  <!-- Modal content -->
-	<div class="modal-content">
-		<span class="close">&times;</span>
-			<div class="cell">
-				<div class="framed align-right" style="float: left;">
-				  <img src="Images/Hyperloading.jpg" alt="HyperLoading1">
-				  <img src="Images/Hyperloading2.jpg" alt="HyperLoading2">
-				  <img src="Images/Hyperloading3.jpg" alt="HyperLoading3">
-				  <img src="Images/Hyperloading4.jpg" alt="HyperLoading4">
-				</div>
-				<div class="caption-box">
-				<h1 style="text-align: left;color: #888; padding-top: 1.5%;font-family: Frutiger;font-size:2.5em;">Hyper Loading</h1>
-				<p style="text-align: left;">
-				Hyper Loading is a recreational zine about some mysteries which are beyond the sustentation and understanding of human being.
-				Issue 1 is about an intreactive black box picked from hyperspace, which claims that it is coming and delivering some messages to human.
-				The black box is made up of four parts: Laws of playing, Circuit of Background, Mechanism of Rendering and Escaping Pot. By using mouse and keyboard to play around with the page, you could find these messages through noticing the hidden hints.
-				</p>
-				<p style="text-align: left;">
-				超负荷是一本娱乐志，专注于那些超出人类承受与理解范围的谜题。
-创刊号“黑匣子”为大家带来一个打捞自宇宙深处的不明装置，携带着一些“所谓”致全人类的奇怪信息。
-“黑匣子”总共有四个部分：游戏定律、后台线路、渲染机制和逃生舱。通过使用鼠标键盘与页面进行互动，留意隐藏的线索，可以找到这些内容。
-				</p>
-				<h1 style="text-align: left;color: #888;font-size:2em;">超负荷</h1>
-				<p style="text-align:left;padding-top: 2%;">
-				* 由于图片数量较多，载入过程会花费较长时间，请耐心等待。
-				</p>
-				<p style="text-align:left;">
-				* Because of the large number of images, the loading process will take a while, please be patient.
-				</p>
-				<a style="float: left;padding-top: 2%;" href="Hyper.html" target="_blank">Hyper Loading</a>
-				<div style="padding-top: 5%;">
-				<p style="text-align: left;">External links:</p>
-				<a style="float: left;padding-right: 1%;" href="https://en.wikipedia.org/wiki/Schr%C3%B6dinger's_cat" target="_blank">Schrödinger's cat</a>
-				<a style="float:left;padding-right: 1%;" href="https://en.wikipedia.org/wiki/Fermi_paradox" target="_blank">Fermi paradox</a>
-				<a style="float: left;" href="https://en.wikipedia.org/wiki/Calabi%E2%80%93Yau_manifold" target="_blank">Calabi-Yau manifold</a>
-				</div>	
-				<div style="padding-top: 3%;">
-				<p style="text-align: left;">外部链接：</p>
-				<a style="float: left;padding-right: 1%;" href="https://baike.baidu.com/item/%E8%96%9B%E5%AE%9A%E8%B0%94%E7%9A%84%E7%8C%AB/554903?fr=aladdin" target="_blank">薛定谔的猫</a>
-				<a style="float:left;padding-right: 1%;" href="https://baike.baidu.com/item/%E8%B4%B9%E7%B1%B3%E6%82%96%E8%AE%BA/10937023?fr=aladdin" target="_blank">费米悖论</a>
-				<a style="float: left;" href="https://baike.baidu.com/item/%E5%8D%A1%E6%8B%89%E6%AF%94%E2%80%94%E4%B8%98%E6%88%90%E6%A1%90%E7%A9%BA%E9%97%B4/1608076?fr=aladdin" target="_blank">卡拉比丘流形</a>
-				</div>
-				<p style="padding-top: 8%;">
-				遥远的星系是虚假的背景贴图
-				</p>
-				<p>
-				不存在的暗物质是高维度的底层代码
-				</p>
-				<p>
-				我们虚构了次级的存在
-				</p>
-				<p>
-				喝了孟婆汤来这里游玩
-				</p>
-				<p style="text-align: left;padding-top:5%;">
-				预告:
-				</p>
-				<p style="text-align:left;padding-top:1%;">
-				第二期：时间果冻
-				</p>
-				<p style="text-align:left;">
-				千年未腐的尸体 ／ 千年未锈的利剑 ／ 千年未现的文明？
-				</p>
-				<p style="text-align: left;padding-top:2%;">
-				Preview: 
-				</p>
-				<p style="text-align:left;padding-top:1%;">
-				Next issue: Time Jelly
-				</p>
-				<p style="text-align:left;">
-				The mummy still alive after thousands of years / The sword untarnished after thousands of years / The culture uncovered for thousands of years
-				</p>
-			</div>
-		</div>
-	</div>
-</div>
-
-			 <div class="cell">
-				<div class="framed align-right">
-					<img id="myPic1" src="Images/iDwa.png" alt="iDwa TV">
-				</div>
-				<div class="caption-box"><span class="caption"><button id="myBtn1">iDwa TV, 2017</button></span></div>
-			</div>
-<div id="myModal1" class="modal">
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-<div class="cell">
-				<div class="framed align-right" style="float: left;">
-				<img src="Images/iDwa.png" alt="iDwa TV">
-				<img src="Images/iDwa2.png" alt="iDwa TV">
-				<img src="Images/iDwa3.png" alt="iDwa TV">
-				<img src="Images/iDwa4.png" alt="iDwa TV">
-				<img src="Images/iDwa5.png" alt="iDwa TV">
-				<img src="Images/iDwa6.png" alt="iDwa TV">
-				<img src="Images/iDwa7.png" alt="iDwa TV">
-				</div >
-				<div class="caption-box">
-				<h1 style="text-align: left;color: #888; padding-top: 1.5%;font-family: Frutiger;font-size:2.5em;">iDwa TV</h1>
-				<p style="text-align: left;">
-				iDwa TV is an imaginary scene consists with an interactive ambiguous character and some hyperlinks. It can be treated as the actualization of my “id”(refer to Freud). It’s just like peeking my mind through a TV, where my whimsicality bursts out. 
-The links refer to webpages of articles or other stuff which I’m interested in, which makes it also works like an information ferry, shows the funny messages I recommended in an heuristic way. 
-				</p>
-				<p style="text-align: left;">
-				These messages are changeable, which means that I’ve built  a frame. It’s kind of a scheme designed for gathering messages, or it could end up being an endoscope of your mind, by introducing the user’s data of the audience.
-				</p>
-				<p style="text-align: left;">
-				<!--中文简介-->
-				</p>
-				<h1 style="text-align: left;color: #888;font-size:2em;"><!--中文名字--></h1>
-				<p style="text-align:left;padding-top: 2%;">
-				<!--中文*注释-->
-				</p>
-				<p style="text-align: left;padding-right: 5%;">
-				<!--英文*注释-->
-				</p>
-				<a style="float: left;padding-top: 2%;" href="iDwa.html" target="_blank">iDwa TV</a>
-			</div>
-		</div>
-  </div>
-</div> 
-			 
-
-			 <div class="cell">
-				<div class="framed align-right">
-					<img id="myPic2" src="Images/Sence2.jpg" alt="Sence of Being">
-				</div>
-				<div class="caption-box"><span class="caption"><button id="myBtn2">Sence of Being, 2017</button></span></div>
-			</div>
-<div id="myModal2" class="modal">
-  <!-- Modal content -->
-  <div class="modal-content">
-    <span class="close">&times;</span>
-<div class="cell">
-				<div class="framed align-right" style="float: left;">
-				  <img src="Images/Sence2.jpg" alt="Sence of Being">
-				</div >
-				<div class="caption-box">
-				<h1 style="text-align: left;color: #888; padding-top: 1.5%;font-family: Frutiger;font-size:2.5em;">Sence of Being</h1>
-				<p style="text-align: left;">
-				Stay silence, and realize the sense of being.
-				</p>
-				<p style="text-align: left;">
-				安静片刻，体会自己的存在。
-				</p>
-				<h1 style="text-align: left;color: #888;font-size:2em;">存在感</h1>
-				<p style="text-align:left;padding-top: 2%;">
-				* 需要配合VR眼镜及带有麦克风的耳机使用，详情可以参考演示。
-				</p>
-				<p style="text-align: left;padding-right: 5%;">
-				 * This work should start with VR device and microphone and earphones. You can take the demo as a reference.
-				</p>
-				<a style="float: left;padding-top: 2%;" href="Sence2.html" target="_blank">Sence of Being</a>
-			</div>
-		</div>
-  </div>
-</div>
-
-           
-            <div class="cell">
-				<div class="framed align-right">
-					<img id="myPic3" src="Images/Interdimensional.jpg" alt="Interdimensional">
-				</div>
-				<div class="caption-box"><span class="caption"><button id="myBtn3">Interdimensional, 2017</button></span></div>
-			</div>
-
-<div id="myModal3" class="modal">
-  <!-- Modal content -->
-	 <div class="modal-content">
-    	<span class="close">&times;</span>
-			<div class="cell">
-				<div class="framed align-right" style="float: left;">
-				  <img src="Images/Interdimensional.jpg" alt="Sence of Being">
-				  <img src="Images/Interdimensional2.jpg" alt="Sence of Being">
-				  <img src="Images/Interdimensional3.jpg" alt="Sence of Being">
-				  <img src="Images/Interdimensional4.jpg" alt="Sence of Being">
-				  <img src="Images/Interdimensional5.jpg" alt="Sence of Being">
-				  <img src="Images/Interdimensional6.jpg" alt="Sence of Being">
-				  <img src="Images/Interdimensional7.jpg" alt="Sence of Being">
-				  <img src="Images/Interdimensional8.jpg" alt="Sence of Being">
-				  <img src="Images/Interdimensional9.jpg" alt="Sence of Being">
-				  <img src="Images/Interdimensional10.jpg" alt="Sence of Being">
-				</div>
-				<div class="caption-box">
-				<h1 style="text-align: left;color: #888; padding-top: 1.5%;font-family: Frutiger;font-size:2.5em;">Interdimensional</h1>
-				<p style="text-align: left;">
-				It’s a story about inter-dimensional walker, recording his various experiences in different dimensions. You can arrive certain location through space folding machine, or just start from the beginning. Because of the limitation of technology, the materials across dimensions can only carry fragmentary information; therefore, besides the walker himself, anyone else has to use these information to deduce the original story. 
-				</p>
-				<p style="text-align: left;">
-				这是一个关于维度旅行者的故事，记录了他在不同维度中各种各样的见闻。你可以通过空间折叠器前往指定的坐标，也可以从头开始。因为技术有限，穿越了维度的物质只能承载碎片化的信息，所以恐怕除了旅行者本人外，其他人大概只能通过这些片段去推断故事的原貌。
-				</p>
-				<h1 style="text-align: left;color: #888;font-size:2em;">跨维度接触</h1>
-				<p style="text-align:left;padding-top: 2%;">
-				* 这些信息零落且不完整，需要较长的载入时间，请耐心等待。在观看过程中，请多使用鼠标进行交互以免遗漏被维度压缩的信息。
-				</p>
-				<p style="text-align: left;padding-right: 5%;">
-				 * These fragmentary and incomplete pieces of information need longer period of time to load, please wait patiently. While watching, please use your mouse to interact with the information, in case to avoid missing information.
-				</p>
-
-				<a style="float: left;padding-top: 2%;" href="Page1.html" target="_blank">Interdimensional</a>
-			</div>
-		</div>
-	 </div>
-</div>
-
-			 <div class="cell">
-				<div class="framed align-right">
-					<img id="myPic4" src="Images/Sence.png" alt="Sence of Being - Experiment of rythm">
-				</div>
-				<div class="caption-box"><span class="caption"><button id="myBtn4">Sence of Being - Experiment of rythm, 2017</button></span></div>
-			</div>
-
-<div id="myModal4" class="modal">
-  <!-- Modal content -->
-	 <div class="modal-content">
-    	<span class="close">&times;</span>
-			<div class="cell">
-				<div class="framed align-right" style="float: left;">
-				  <img src="Images/Sence3.png" alt="Experiment of rythm">
-				  <img src="Images/Sence4.png" alt="Experiment of rythm">
-				  <img src="Images/Sence5.png" alt="Experiment of rythm">
-				  <img src="Images/Sence6.png" alt="Experiment of rythm">
-				  <img src="Images/Sence.png" alt="Experiment of rythm">
-				  <img src="Images/Sence7.png" alt="Experiment of rythm">
-				  <img src="Images/Sence8.png" alt="Experiment of rythm">
-				  <img src="Images/Sence9.png" alt="Experiment of rythm">
-				  <img src="Images/Sence10.png" alt="Experiment of rythm">
-				  <img src="Images/Sence11.png" alt="Experiment of rythmg">
-				  <img src="Images/Sence12.png" alt="Experiment of rythmg">
-				</div>
-				<div class="caption-box">
-				<h1 style="text-align: left;color: #888; padding-top: 1.5%;font-family: Frutiger;font-size:2em;">Sence of Being - Experiment of rythm</h1>
-				<p style="text-align: left;">
-				Just relax.
-				</p>
-				<p style="text-align: left;">
-				放松就好。
-				</p>
-				<h1 style="text-align: left;color: #888;font-size:2em;">跨维度接触</h1>
-				<p style="text-align:left;padding-top: 2%;">
-				* 音乐来自El Ten Eleven乐队，My only swerving。
-				</p>
-				<p style="text-align: left;padding-right: 5%;">
-				 * Music by El Ten Eleven, My only swerving.
-				</p>
-
-				<a style="float: left;padding-top: 2%;" href="Rythm.html" target="_blank">Sence of Being - Experiment of rythm</a>
-			</div>
-		</div>
-	 </div>
-</div>
-
-			<div class="cell">
-				<div class="framed align-right">
-					<img id="myPic5" src="Images/Poster.jpg" alt="Space Folding Machine">
-				</div>
-				<div class="caption-box"><span class="caption"><button id="myBtn5">Space Folding Machine, 2017</button></span></div>
-			</div>
-   
-<div id="myModal5" class="modal">
-  <!-- Modal content -->
-	 <div class="modal-content">
-    	<span class="close">&times;</span>
-			<div class="cell">
-				<div class="framed align-right" style="float: left;">
-				  <img src="Images/Poster.jpg" alt="Space Folding Machine">
-				</div>
-				<div class="caption-box">
-				<h1 style="text-align: left;color: #888; padding-top: 1.5%;font-family: Frutiger;font-size:2.5em;">Space Folding Machine</h1>
-				<p style="text-align: left;">
-				It’s the poster of ‘Interdimensional’.
-				</p>
-				<p style="text-align: left;">
-				这是“跨维度接触”的海报。
-				</p>
-				<h1 style="text-align: left;color: #888;font-size:2em;">空间折叠器</h1>
-				<p style="text-align:left;padding-top: 2%;">
-				* 折叠器是前往“跨维度接触”的入口，请配合空间折叠器的另一半实体使用。
-				</p>
-				<p style="text-align: left;padding-right: 5%;">
-				 * Folding machine is the entrance of “Interdimensional”, please use it with the other part of it.
-				</p>
-
-				<a style="float: left;padding-top: 2%;" href="Images/Poster.jpg" target="_blank">Space Folding Machine.jpg</a>
-			</div>
-		</div>
-	 </div>
-</div>
-
-            <div class="cell">
-				<div class="framed align-right">
-					<img id="myPic6" src="Images/Savior.jpg" alt="Savior">
-				</div>
-				<div class="caption-box"><span class="caption"><button id="myBtn6">Savior, 2016</button></span></div>
-			</div>
-
-<div id="myModal6" class="modal">
-  <!-- Modal content -->
-	 <div class="modal-content">
-    	<span class="close">&times;</span>
-			<div class="cell">
-				<div class="framed align-right" style="float: left;">
-				  <img src="Images/Savior.jpg" alt="Space Folding Machine">
-				</div>
-				<div class="caption-box">
-				<h1 style="text-align: left;color: #888; padding-top: 1.5%;font-family: Frutiger;font-size:2.5em;">Mind Way</h1>
-				<p style="text-align: left;">
-				What if we can study, learn, keep exercise, or enhance our willpower through playing game? It sounds a little crazy but it could still be accomplished theoretically.
-				</p>
-				<p style="text-align: left;">
-				如果我们可以通过游戏的方法来读书，学习，保持锻炼甚至是增强自己的意志力，会怎么样？虽然听起来很不着边际，但这具有理论上的可能。
-				</p>
-				<h1 style="text-align: left;color: #888;font-size:2em;">念途</h1>
-				<p style="text-align:left;padding-top: 2%;">
-				* 这个项目尚未完成，目前仅提供部分视觉内容。
-				</p>
-				<p style="text-align: left;padding-right: 5%;">
-				 * There is only visual contents provided here, since the program is still unfinished.
-				</p>
-
-				<a style="float: left;padding-top: 2%;" href="Savior.html" target="_blank">Savior</a>
-			</div>
-		</div>
-	 </div>
-</div>
-			
-			<div class="cell">
-				<div class="framed align-right">
-				  <img id="myPic7" src="Images/Hujiu.jpg" alt="Hujiu">
-				</div>
-				<div class="caption-box"><span class="caption"><button id="myBtn7">Hujiu, 2016</button></span></div>
-			</div>
-
-<div id="myModal7" class="modal">
-  <!-- Modal content -->
-	 <div class="modal-content">
-    	<span class="close">&times;</span>
-			<div class="cell">
-				<div class="framed align-right" style="float: left;">
-				  <img src="Images/Hujiu.jpg" alt="Space Folding Machine">
-				</div>
-				<div class="caption-box">
-				<h1 style="text-align: left;color: #888; padding-top: 1.5%;font-family: Frutiger;font-size:2.5em;">Hu Jiu</h1>
-				<p style="text-align: left;">
-				White spirit in the market focuses on older people. Creating a new brand by redesigning the packaging, I used modern layouts and compositions to rearrange traditional Chinese painting elements. I related the different flavors of white spirit from different characters in a famous story, "All men are brothers".
-				</p>
-				<p style="text-align: left;">
-				市面上的白酒品牌对于年轻人来说太过老气，我尝试从包装设计入手，重新设计一个年轻化的白酒品牌。我用现代化的版式来组织传统的国画元素，将酒的口味和水浒传里不同性格的角色联系起来，设计出这款白酒包装。
-				</p>
-				<h1 style="text-align: left;color: #888;font-size:2em;">浒酒</h1>
-				<p style="text-align:left;padding-top: 2%;">
-				* 包装设计，2016中南星奖一等奖。
-				</p>
-				<p style="text-align: left;padding-right: 5%;">
-				 * Packaging Design, first prize of Star of Central South, 2016.
-				</p>
-
-				<a style="float: left;padding-top: 2%;" href="Hujiu.html" target="_blank">Hujiu</a>
-			</div>
-		</div>
-	 </div>
-</div>
-
-            <div class="cell">
-				<div class="framed align-right">
-			  <a href="Photograph.html">
-				  <img src="Images/Photograph.jpg" alt="Photograph">
-				  </a>
-				</div>
-				<div class="caption-box"><span class="caption"><a href="Photograph.html" target="_blank">Photograph, 2015</a></span></div>
-			</div>
-            
-
-            
-	<div style="text-align:center;">
-				<div id="social">
-					<ul>
-						<li><a href="http://weibo.com/youql/profile?rightmod=1&wvr=6&mod=personnumber&is_all=1" target="_blank">Weibo</a></li>
-						<li><a href="https://www.facebook.com/profile.php?id=100009441157558" target="_blank">Facebook</a></li>
-						<li><a href="https://www.tumblr.com/blog/swimupppp" target="_blank">Tumblr</a></li>
-						<li><a href="https://www.instagram.com/stream_up/" target="_blank">Instagram</a></li>
-						<li><a href="https://github.com/Uperstream" target="_blank">GitHub</a></li>
-					</ul>
-				</div>
-	</div>
-
-		  <div class="records">
-				<span class="yellow"> Education</span>
-				Bachelor of Fine Arts, Guangzhou Academic of Fine Arts, 2012-16.
-		</div>
-
-<script>
-// Get the modal
-var modal = document.getElementById('myModal');
-var modal1 = document.getElementById('myModal1');
-var modal2 = document.getElementById('myModal2');
-var modal3 = document.getElementById('myModal3');
-var modal4 = document.getElementById('myModal4');
-var modal5 = document.getElementById('myModal5');
-var modal6 = document.getElementById('myModal6');
-var modal7 = document.getElementById('myModal7');
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-var pic = document.getElementById("myPic");
-var btn1 = document.getElementById("myBtn1");
-var pic1 = document.getElementById("myPic1");
-var btn2 = document.getElementById("myBtn2");
-var pic2 = document.getElementById("myPic2");
-var btn3 = document.getElementById("myBtn3");
-var pic3 = document.getElementById("myPic3");
-var btn4 = document.getElementById("myBtn4");
-var pic4 = document.getElementById("myPic4");
-var btn5 = document.getElementById("myBtn5");
-var pic5 = document.getElementById("myPic5");
-var btn6 = document.getElementById("myBtn6");
-var pic6 = document.getElementById("myPic6");
-var btn7 = document.getElementById("myBtn7");
-var pic7 = document.getElementById("myPic7");
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-var span1 = document.getElementsByClassName("close")[1];
-var span2 = document.getElementsByClassName("close")[2];
-var span3 = document.getElementsByClassName("close")[3];
-var span4 = document.getElementsByClassName("close")[4];
-var span5 = document.getElementsByClassName("close")[5];
-var span6 = document.getElementsByClassName("close")[6];
-var span7 = document.getElementsByClassName("close")[7];
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-    modal.style.display = "block";
-}
-pic.onclick = function() {
-    modal.style.display = "block";
-}
-btn1.onclick = function() {
-    modal1.style.display = "block";
-}
-pic1.onclick = function() {
-    modal1.style.display = "block";
-}
-btn2.onclick = function() {
-    modal2.style.display = "block";
-}
-pic2.onclick = function() {
-    modal2.style.display = "block";
-}
-btn3.onclick = function() {
-    modal3.style.display = "block";
-}
-pic3.onclick = function() {
-    modal3.style.display = "block";
-}
-btn4.onclick = function() {
-    modal4.style.display = "block";
-}
-pic4.onclick = function() {
-    modal4.style.display = "block";
-}
-btn5.onclick = function() {
-    modal5.style.display = "block";
-}
-pic5.onclick = function() {
-    modal5.style.display = "block";
-}
-btn6.onclick = function() {
-    modal6.style.display = "block";
-}
-pic6.onclick = function() {
-    modal6.style.display = "block";
-}
-btn7.onclick = function() {
-    modal7.style.display = "block";
-}
-pic7.onclick = function() {
-    modal7.style.display = "block";
-}
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
-span1.onclick = function() {
-    modal1.style.display = "none";
-}
-span2.onclick = function() {
-    modal2.style.display = "none";
-}
-span3.onclick = function() {
-    modal3.style.display = "none";
-}
-span4.onclick = function() {
-    modal4.style.display = "none";
-}
-span5.onclick = function() {
-    modal5.style.display = "none";
-}
-span6.onclick = function() {
-    modal6.style.display = "none";
-}
-span7.onclick = function() {
-    modal7.style.display = "none";
-}
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-	if (event.target == modal1) {
-        modal1.style.display = "none";
-    }
-    if (event.target == modal2) {
-        modal2.style.display = "none";
-    }
-    if (event.target == modal3) {
-        modal3.style.display = "none";
-    }
-    if (event.target == modal4) {
-        modal4.style.display = "none";
-    }
-    if (event.target == modal5) {
-        modal5.style.display = "none";
-    }
-    if (event.target == modal6) {
-        modal6.style.display = "none";
-    }
-    if (event.target == modal7) {
-        modal7.style.display = "none";
-    }
-}
-</script>
-</body>
+        //hide mouse, ??put mouse back to center after focus change (center mouse variable)
+    </script>
+    
+  </body>
 </html>

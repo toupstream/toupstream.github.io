@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>上游</title>
+    <script src="../libraries/p5.js" type="text/javascript"></script>
+
+    <script src="../libraries/p5.dom.js" type="text/javascript"></script>
+    <script src="../libraries/p5.sound.js" type="text/javascript"></script>
+    <script src="../sketch.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    
+    <link rel = "stylesheet" href = "../style_zh.css">
+</head>
+<body>
+  <header id ="nav">
+      <nav>
+        <ul>
+          <li class = "selected" data-link = "../index_zh.html"><a href = "../index_zh.html" class = "navTag currentNav">叙事</a></li>
+          <li data-link = "../spread.html"><a href = "../spread.html" class = "navTag">展示</a></li>
+          <li data-link = "../profile.html"><a href = "../profile.html" class = "navTag">简历</a></li>
+          <li data-link = "../index.html"><a href = "../index.html" class = "navTag">中文 / Eng</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <section class="content" id = "content" data-expand = "move">
+      <!--<div class="leftboard"></div>-->
+      <!--<div class="rightboard"></div>-->
+      <div class = "contentNav eachContent">
+        <ul id = "contentNavigation">
+          <li class = "contentSelector" data-link = "#intro"><span class = "currentSpan" id = "introSpan"><a class ="currentTag" href = "#intro">简介</a></span></li>
+          <li class = "contentSelector" data-link = "#motivation"><span class = "otherSpan" id ="motivationSpan"><a class = "contentNavTag" href = "#motivation">动机</a></span></li>
+          <li class = "contentSelector" data-link = "#process"><span class = "otherSpan" id = "processSpan"><a class = "contentNavTag" href = "#process">过程</a></span></li>
+        </ul>
+      </div>
+
+      <div class="projectContent moretext" >
+        <h1>小点的一生</h1>
+        <p id = "intro">小点的一生是在比喻人们复杂的生存状况。一个小点在Plinko游戏机里被柱子不断左右其方向，随机地落入不同的结果里。就像生命在一个充满不确定的世界里，随时都有可能落入极端情况。这些不同的结果往往从同一个起点开始，历经了很多随机或者非自愿的选择。这也是许多少数群体和弱势群体的经历，他们是社会中不常被代表的人群。用游戏来诠释并不是为了淡化这种坚韧，而是为了更好的去感受和面对。
+        </p>
+        <p id = "motivation">尚未创建...</p>
+        <p id = "process">尚未创建...</p>
+      </div>
+      
+      <div class = "showcase eachContent">
+        <div class="picture">
+          <span class = "contentSelector" data-link = "../projects/lifeOfDots.html">Enter<img src = "../Images/life01.jpg" alt="Life of dots"></span>
+          <span class = "contentSelector" data-link = "../projects/lifeOfDots.html">Enter<img src = "../Images/life02.jpg" alt="Life of dots"></span>
+          <span class = "contentSelector" data-link = "../projects/lifeOfDots.html">Enter<img src = "../Images/life03.jpg" alt="Life of dots"></span>
+          <span class = "contentSelector" data-link = "../projects/lifeOfDots.html">Enter<img src = "../Images/life04.jpeg" alt="Life of dots"></span>
+          <span class = "contentSelector" data-link = "../projects/lifeOfDots.html">Enter<img src = "../Images/life05.jpeg" alt="Life of dots"></span>
+        </div>
+      </div>
+
+      <p class="stamp">于2020</p>
+
+      
+    </section>
+<!--     <a href="index.html" id = "link" style="z-index: 3;opacity: 0;cursor: none">link<p></p></a> -->
+    <footer id = "dir">
+      <span id = "mail" data-link = "#"><a href = "#" class = "dirTag">toupstream@gmail.com</a></span>
+      <ul>
+          <li data-link = "https://github.com/Uperstream"><a href = "#" class = "dirTag"><span></span>Git</a></li>
+          <li data-link = "https://www.instagram.com/toupstream/"><a href = "#" class = "dirTag"><span></span>Ins</a></li>
+      </ul>
+    </footer>
+    
+    <div id="tut" data-texts = "噢，我把鼠标拿走了，因为这是一个注重用户体厌的设计 ;)" data-lefta = "去你的" data-righta = "无所谓"></div>
+</body>
+</html>

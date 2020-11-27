@@ -1,0 +1,173 @@
+@charset "utf-8";
+html, body {
+	margin:0;
+	padding:0;
+	min-width:480px;
+	min-height:100%;
+}
+body {
+	font-family: maven-pro;
+	font-size: 28px;
+	font-style: normal;
+	font-weight: 400;
+}
+
+div#bg {
+	position: fixed;
+	width: 200%;
+	height: 200%;
+	top: -50%;
+	left: -50%;
+	z-index: -1;
+	-webkit-transform: rotate(340deg);
+	-moz-transform: rotate(340deg);
+	-ms-transform: rotate(340deg);
+	-o-transform: rotate(340deg);
+	transform: rotate(340deg);
+	background-repeat: repeat;
+	background-position: 0 0 repeat;
+	background-image: url('/assets/images/bg.jpg');
+	background-color: #000000;
+}
+
+
+div#header {
+	max-width: 960px;
+	margin: 0 auto 40px;
+	padding: 0 10px;
+}
+
+div#header a.title {
+	font-weight: bold;
+	color: #16677F;
+	text-decoration: none;
+}
+
+div#social {
+	display:inline-block;
+	margin:0 auto 50px;
+	padding:4px 28px;
+}
+div#social a {
+	color: #034266;
+}
+div#social a:hover {
+	color: #158955;
+}
+div#social ul li {
+	display:inline-block;
+	list-style:none;
+}
+
+div#work {
+	max-width:960px;
+	margin:10px auto 10px;
+	padding:10px;
+	font-size:32px;
+	clear:both;
+}
+
+
+div.records {
+	padding: 10px;
+	font-size: 18px;
+	color: #464646;
+}
+
+span.yellow {
+	color: #584B68;
+}
+
+/* COLUMNS */
+div.cell {
+	width: 98%;
+	min-width: 440px;
+	padding: 0 1%;
+	margin: 0 0 24px 0;
+	text-align: center;
+
+}
+
+/* IMAGES */
+div.framed {
+	width: 96%;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 2%;
+}
+div.vertical {
+	max-width:640px;
+}
+div.caption-box {
+	font-size:14px;
+}
+div.caption-box a {
+	color: #FFD68F;
+}
+div.caption-box a:hover {
+	color: #817CFF;
+}
+div#container {
+	margin:20px 10px;
+}
+
+img {
+	vertical-align:bottom;
+	max-width:100%;
+	max-height:100%;
+}
+.align-right {
+	margin:0 0 0 auto;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.modal-content {
+	border: none;
+}
+.modal-content .cell p {
+
+	border: none;
+	color: #B8B8B8;
+	font-family: Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", monospace;
+	font-size: small;
+	padding-right: 0.5%;
+}
+.close {
+	padding-right: 2%;
+    color: #aaa;
+    float: right;
+}
+.modal-content .cell .framed.align-right {
+	width: 50%;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+	border: none;
+	background-color: #000;
+	color: #FFD68F;
+	cursor: pointer;
+	display: inline-block;
+}
+
+button:hover {
+	color: #817CFF;
+}

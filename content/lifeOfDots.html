@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+	<title>Upstream</title>
+	  <script src="../libraries/p5.js" type="text/javascript"></script>
+
+    <script src="../libraries/p5.dom.js" type="text/javascript"></script>
+    <script src="../libraries/p5.sound.js" type="text/javascript"></script>
+    <script src="../sketch.js" type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    
+    <link rel = "stylesheet" href = "../style.css">
+</head>
+<body>
+  <header id ="nav">
+      <nav>
+        <ul>
+          <li class = "selected" data-link = "../index.html"><a href = "../index.html" class = "navTag currentNav">Fiction</a></li>
+          <li data-link = "../spread.html"><a href = "../spread.html" class = "navTag">Spread</a></li>
+          <li data-link = "../profile.html"><a href = "../profile.html" class = "navTag">Profile</a></li>
+          <li data-link = "../index_zh.html"><a href = "../index_zh.html" class = "navTag">Eng / 中文</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <section class="content" id = "content" data-expand = "move">
+      <!--<div class="leftboard"></div>-->
+      <!--<div class="rightboard"></div>-->
+      <div class = "contentNav eachContent">
+        <ul id = "contentNavigation">
+          <li class = "contentSelector" data-link = "#intro"><span class = "currentSpan" id = "introSpan"><a class ="currentTag" href = "#intro">Intro</a></span></li>
+          <li class = "contentSelector" data-link = "#motivation"><span class = "otherSpan" id ="motivationSpan"><a class = "contentNavTag" href = "#motivation">Motivation</a></span></li>
+          <li class = "contentSelector" data-link = "#process"><span class = "otherSpan" id = "processSpan"><a class = "contentNavTag" href = "#process">Process</a></span></li>
+        </ul>
+      </div>
+
+      <div class="projectContent moretext" >
+        <h1>Life Of Dots</h1>
+        <p id = "intro">Life of dots is a metaphor for variable life situations. A dot drops into the Plinko game, leading to different results arbitrarily under the directing of the pillars. In a world full of uncertainty, any life could end up in an extreme living condition. These various consequences often depart from the very same starting point, as results of accumulated random or unwilling choices. That’s also the stories of minorities, marginal societies, and non-representable. 
+        Using games as the medium is not to depreciate their toughness. Address it playfully is to appreciate it gratefully.
+        </p>
+        <p id = "motivation">It’s is part of the project Illuminate the Non-Representable. It’s developed during the KU workshop, where the student got paired up with professors and assisting them in their projects.</p>
+        <p id = "process">
+I tried to map the idea of non-representable with some playful representation to compensate for the disturbance and seriousness coming along with this topic. I felt that the uncertainty in people’s life is a form of amplified randomness. This idea about amplification reminds me of a lever, a machine that can trigger huge impact by slight changes. And that’s exactly how piano functions mechanically. Following that idea, this work cloud has become an installation for playing the “song of life” from the non-representable. However, it feels a bit cliche to me.
+Ends up I choose Plinko, a game people used to make simple random choices. I made a digital version of it and adjusted the visual elements under my preferences.</p>
+      </div>
+      
+      <div class = "showcase eachContent">
+        <div class="picture">
+          <span class = "contentSelector" data-link = "../projects/lifeOfDots.html">Enter<img src = "../Images/life01.jpg" alt="Life of dots"></span>
+          <span class = "contentSelector" data-link = "../projects/lifeOfDots.html">Enter<img src = "../Images/life02.jpg" alt="Life of dots"></span>
+          <span class = "contentSelector" data-link = "../projects/lifeOfDots.html">Enter<img src = "../Images/life03.jpg" alt="Life of dots"></span>
+          <span class = "contentSelector" data-link = "../projects/lifeOfDots.html">Enter<img src = "../Images/life04.jpeg" alt="Life of dots"></span>
+          <span class = "contentSelector" data-link = "../projects/lifeOfDots.html">Enter<img src = "../Images/life05.jpeg" alt="Life of dots"></span>
+        </div>
+      </div>
+
+      <p class="stamp">At 2020.</p>
+
+      
+    </section>
+    <footer id = "dir">
+      <span id = "mail" data-link = "#"><a href = "#" class = "dirTag">toupstream@gmail.com</a></span>
+      <ul>
+          <li data-link = "https://github.com/Uperstream"><a href = "#" class = "dirTag"><span></span>Git</a></li>
+          <li data-link = "https://www.instagram.com/toupstream/"><a href = "#" class = "dirTag"><span></span>Ins</a></li>
+      </ul>
+    </footer>
+</body>
+</html>
