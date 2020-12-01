@@ -115,8 +115,8 @@ void restart(){
 void setup(){
   //background();
   size(550, 800);
-  img = loadImage("Images/lifeOfDots.jpg");
-  font = createFont("font/Comfortaa-Bold.ttf", 12);
+  img = loadImage("/Images/lifeOfDots.jpg");
+  font = createFont("/font/Comfortaa-Bold.ttf", 12);
   textFont(font);
   buttonCount = 0;
   strokeCap(SQUARE);

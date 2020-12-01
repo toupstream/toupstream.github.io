@@ -35,7 +35,7 @@ void collageSplit(PImage img, PImage G, PImage B, int rangeX, int rangeY, float 
 
 void setup() {
   size(450, 800); 
-  img0 = loadImage("Images/codeCollage.jpg");
+  img0 = loadImage("/Images/codeCollage.jpg");
   // b1 = loadImage("b1.png");
   // b2 = loadImage("b2.png");
   // b3 = loadImage("b3.png");
