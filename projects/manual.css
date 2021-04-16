@@ -70,7 +70,6 @@ p {
 .content {
   height: 100%;
   /*float: left;*/
-
 }
 
 .img {
@@ -90,7 +89,7 @@ p {
   margin: 0 13.5vh;
   /*border-style: none solid;*/
   /*border-width: 1px;*/
-  border-left:1px solid;
+  border-left: 1px solid;
   -moz-transform: skew(-25deg);
   -webkit-transform: skew(-25deg);
   transform: skew(-25deg);
@@ -104,7 +103,6 @@ p {
   -moz-transform: skew(25deg);
   -webkit-transform: skew(25deg);
   transform: skew(25deg);
-  
 }
 
 .text {
@@ -122,27 +120,27 @@ p {
 .text p {
   width: 60%;
   font-size: 10pt;
-  padding:15px 20px;
+  padding: 15px 20px;
   float: left;
 }
 
 .extraCrop {
-  bottom:0;
+  bottom: 0;
   right: 0;
-  height:92vh;
+  height: 92vh;
   width: 42.9vh;
   position: absolute;
-  overflow:hidden;
+  overflow: hidden;
 }
 
 .extra {
   color: #baddd9;
-  border-left:1px solid;
-  background:black;
-  height:100%;
-  width:100%;
-  margin-left:21.45vh;
-  overflow:hidden;
+  border-left: 1px solid;
+  background: black;
+  height: 100%;
+  width: 100%;
+  margin-left: 21.45vh;
+  overflow: hidden;
   -moz-transform: skew(-25deg);
   -webkit-transform: skew(-25deg);
   transform: skew(-25deg);
@@ -151,42 +149,58 @@ p {
 .extraLeftCrop {
   bottom: 0;
   left: 0;
-  height:20vh;
+  height: 20vh;
   width: 25%;
+  margin: 0;
   position: absolute;
-  overflow:hidden;
+  overflow: hidden;
 }
 
 .extraLeft {
-  background-color:black;
-  width:100%;
+  background-color: black;
+  width: 100%;
   height: 100%;
   color: #baddd9;
-  margin-left:-21.45vh;
-  border-right:1px solid;
+  margin-left: -21.45vh;
+  border-right: 1px solid;
   transform: skew(65deg);
 }
 
 .extraImg {
-  margin-left:-15px;
-  height:72%;
+  margin-left: -15px;
+  height: 72%;
 }
 
 .extraTxt {
   background: linear-gradient(90deg, rgba(0, 44, 88, 1) 0%, rgba(0, 0, 0, 1) 50%);
-  height:100%;
+  height: 100%;
 }
 
 .leftCorner {
   height: 35vw;
   width: 35vw;
-  background-color:black;
+  background-color: black;
   color: #baddd9;
   position: absolute;
   left: -18vw;
   top: -23vw;
   border-radius: 50%;
-  border:1px solid;
+  border: 1px solid;
+}
+
+.extraTxtBlock {
+  color: #baddd9;
+  padding: 20px 30px;
+  /*float:none;*/
+  /*height:100%*/
+  -moz-transform: skew(25deg);
+  -webkit-transform: skew(25deg);
+  transform: skew(25deg);
+  font-size: 15pt;
+}
+
+.extraTxtBlock a {
+  color: #baddd9;
 }
 
 
