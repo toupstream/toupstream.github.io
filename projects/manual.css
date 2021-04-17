@@ -1,34 +1,40 @@
-/*@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
 
-html {
-  /*overflow: hidden;*/
-}
+/*html {*/
+/*    min-height:500px;*/
+
+/*}*/
 
 body {
   background-color: black;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  /*cursor: none;*/
+  min-height:360px;
+  /*max-height:60vw;*/
   height: 100vh;
+  min-width:140vh;
   width: 100vw;
 }
 
 header {
-  /*background-color: black;*/
-  background: linear-gradient(90deg, rgba(41, 68, 0, 1) 10%, rgba(0, 0, 0, 1) 20%);
+  /*Layout*/
   height: 8%;
-  color: #baddd9;
-  min-height: 20px;
-  text-align: center;
   margin: 0;
+  
+  /*color*/
+  background: linear-gradient(90deg, rgba(41, 68, 0, 1) 10%, rgba(0, 0, 0, 1) 20%);
+  color: #baddd9;
   border-bottom: #baddd9 1px solid;
-  /*padding: 0;*/
+  
+  /*font*/
+  font-style: Italic;
+  text-align: center;
 }
 
 h1 {
   margin: 0;
-  font-size: 5vh;
-  padding: 1vh 0 0 5vw;
+  font-size: 4vh;
+  padding: 1.5vh 0 0 10%;
 }
 
 
@@ -38,6 +44,8 @@ h1 {
   width: 100%;
   height: 92%;
   margin: 0;
+  position: relative;
+  /*right:0;*/
   /*padding: 0;*/
   /*float: left;*/
   /*display: grid;*/
@@ -59,12 +67,16 @@ h1 {
 
 .toc {
   color: #baddd9;
-  margin-top: 10vh;
+  text-decoration:none;
+  margin-top: 28%;
+  list-style-type: none;
+  font-size:3vh;
+  font-weight:400;
 }
 
 p {
   margin: 0;
-  padding-top: 10px;
+  padding-top: 13%;
 }
 
 .content {
@@ -78,7 +90,7 @@ p {
   /*display:inline-block;*/
   float: left;
   width: calc(75% - 1px);
-  height: 58vh;
+  height: 58%;
 }
 
 .skew {
@@ -86,7 +98,7 @@ p {
   /*width: 60%;*/
   color: #baddd9;
   height: 100%;
-  margin: 0 13.5vh;
+  margin: 0 12.28vh;
   /*border-style: none solid;*/
   /*border-width: 1px;*/
   border-left: 1px solid;
@@ -109,7 +121,7 @@ p {
   /*border: #baddd9 1px solid;*/
   background: linear-gradient(90deg, rgba(0, 0, 0, 1) 50%, rgba(0, 44, 88, 1) 80%);
   width: calc(72% - 1px);
-  height: calc(100% - 58vh);
+  height: calc(100% - 58%);
   float: left;
   /*display:inline;*/
   color: #fff;
@@ -124,11 +136,19 @@ p {
   float: left;
 }
 
+
+/*-------------------------------------------------fixed corners--------------------------------------------------*/
+/*-------------------------------------------------fixed corners--------------------------------------------------*/
+/*-------------------------------------------------fixed corners--------------------------------------------------*/
+/*-------------------------------------------------fixed corners--------------------------------------------------*/
+
 .extraCrop {
   bottom: 0;
+  /*top:0;*/
   right: 0;
-  height: 92vh;
+  height: 100%;
   width: 42.9vh;
+  min-width: 154px;
   position: absolute;
   overflow: hidden;
 }
@@ -139,6 +159,7 @@ p {
   background: black;
   height: 100%;
   width: 100%;
+  /*margin:0;*/
   margin-left: 21.45vh;
   overflow: hidden;
   -moz-transform: skew(-25deg);
@@ -146,10 +167,11 @@ p {
   transform: skew(-25deg);
 }
 
+
 .extraLeftCrop {
   bottom: 0;
   left: 0;
-  height: 20vh;
+  height: 50%;
   width: 25%;
   margin: 0;
   position: absolute;
@@ -161,8 +183,10 @@ p {
   width: 100%;
   height: 100%;
   color: #baddd9;
-  margin-left: -21.45vh;
-  border-right: 1px solid;
+  margin-left: -49vh;
+  border-right: 3px solid;
+  -moz-transform: skew(65deg);
+  -webkit-transform: skew(65deg);
   transform: skew(65deg);
 }
 
@@ -178,76 +202,126 @@ p {
 
 .leftCorner {
   height: 35vw;
-  width: 35vw;
+  /*min-height: 30vh;*/
+  min-height: 210px;
+  width: 35%;
+  /*min-width: 210px;*/
   background-color: black;
   color: #baddd9;
   position: absolute;
-  left: -18vw;
-  top: -23vw;
+  left: -18%;
+  top: -26vw;
   border-radius: 50%;
   border: 1px solid;
 }
 
 .extraTxtBlock {
   color: #baddd9;
-  padding: 20px 30px;
+  padding: 5vh 7vh;
   /*float:none;*/
   /*height:100%*/
+  text-decoration:none;
   -moz-transform: skew(25deg);
   -webkit-transform: skew(25deg);
   transform: skew(25deg);
-  font-size: 15pt;
+  font-size: 3vh;
+}
+
+.extraTxtBlock h2 {
+  font-size: 7vh;
+  font-weight: 300;
+  margin:0;
 }
 
 .extraTxtBlock a {
   color: #baddd9;
 }
 
+.sideImg {
+  height:40vh;
+  margin:-15vh 0;
+}
+
+
+
+.playImg{
+  height:50px;
+  float:left
+}
 
 /*adaptive*/
 
-@media screen and (max-width:900px) {
-  h1 {
-    font-size: 4vh;
-    padding: 1.5vh 0 0 5vw;
+/*@media screen and (max-width:900px) {*/
+/*  h1 {*/
+/*    font-size: 4vh;*/
+/*    padding: 1.5vh 0 0 5vw;*/
     /*color: red;*/
-  }
-}
-
-@media screen and (max-width: 700px) {
-  h1 {
-    font-size: 3vh;
-    /*padding: 1.5vh 0 0 5vw;*/
-    color: red;
-  }
-}
-
-
-/*header a {*/
-
-
-/*  color: #888;*/
-
-
-/*  text-decoration: none;*/
-
-
-/*font-size: calc(2.6vw+2pt);*/
-
-
-/*font-size:16pt;*/
-
-
-/*  font-size:120%;*/
-
-
-/*  position: relative;*/
-
-
-/*bottom:0.1vh;*/
-
-
-/*  font-weight: 700;*/
-
-
+/*  }*/
 /*}*/
+
+/*@media screen and (max-width: 700px) {*/
+/*  h1 {*/
+/*    font-size: 3vh;*/
+    /*padding: 1.5vh 0 0 5vw;*/
+/*    color: red;*/
+/*  }*/
+/*}*/
+
+@media screen and (max-height: 600px) {
+  h1 {
+  font-size: 12pt;
+  }
+  .toc {
+    font-size:12pt;
+  }
+  .sideImg {
+    height:150px;
+    margin: -55px 0;
+  }
+  .extraTxtBlock{
+    font-size: 10pt;
+  }
+  .extraTxtBlock h2 {
+    font-size: 20pt;
+  }
+  .playImg {
+    padding-top:20px;
+    height: 30px;
+    /*margin-bottom:100px;*/
+  }
+}
+
+
+
+
+
+/* minimum size */
+
+@media screen and (max-width:600px) {
+  .leftCorner {
+    top:-156px;
+  }
+
+}
+
+@media screen and (max-height: 360px) {
+  .skew {
+    margin-left: 43px;
+  }
+  .extra {
+    margin-left: 77.2px;
+  }
+  body {
+    min-width:600px;
+  }
+
+  /*.extraLeft {*/
+  /*  margin-left: 88px;*/
+  /*}*/
+}
+
+@media all and (orientation:portrait) {
+  .pop {
+    visibility: visible;
+  }
+}
