@@ -121,7 +121,7 @@ p {
 .skewImg {
   margin: 0 -13.5vh;
   height: 100%;
-  object-position: -20px;
+  /*object-position: -20px; */
   -moz-transform: skew(25deg);
   -webkit-transform: skew(25deg);
   transform: skew(25deg);
