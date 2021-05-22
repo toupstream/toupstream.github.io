@@ -8,6 +8,25 @@
 
 /*}*/
 
+a{
+  text-decoration:none;
+  color: #10cba1;
+}
+
+a[name]{
+  font-size:16pt;
+  font-weight:300;
+}
+
+section a[href]:hover {
+  background:#10cba1;
+  color:black;
+}
+/*.navStar:hover {*/
+/*  background:inherit;*/
+/*  color:inherit;*/
+/*}*/
+
 body {
   background-color: black;
   margin: 0;
@@ -108,7 +127,6 @@ p {
   /*width: 60%;*/
   color: #10cba1;
   height: 100%;
-  width: 100%;
   margin: 0 12.2vh;
   /*border-style: none solid;*/
   /*border-width: 1px;*/
@@ -121,8 +139,8 @@ p {
 
 .skewImg {
   margin: 0 -13.5vh;
-  width: 100%;
-  /*object-position: -20px; */
+  height: 100%;
+  object-position: -20px;
   -moz-transform: skew(25deg);
   -webkit-transform: skew(25deg);
   transform: skew(25deg);
@@ -146,7 +164,7 @@ p {
 .text p {
   width: 60%;
   font-size: 12pt;
-  text-indent: 2%;
+  /*text-indent: 2%;*/
   padding: 15px 20px;
   float: left;
 }
@@ -280,13 +298,21 @@ p {
 }
 
 .extraTxtBlock a {
-  color: #10cba1;
+  /*color: #10cba1;*/
   font-size: 3.2vh;
   font-weight:500;
   margin-top:2vh;
   font-style:italic;
   text-decoration: none;
 }
+
+.extraTxtBlock a:hover span {
+  background:#10cba1;
+}
+
+/*.extraTxtBlock span {*/
+/*  color: #10cba1;*/
+/*}*/
 
 .live{
   font-size: 4vh;
@@ -311,6 +337,13 @@ p {
 .playImg {
   height: 50px;
   float: left
+}
+
+.navStar{
+  position:absolute;
+  /*color:#10cba1;*/
+  top:8%;
+  left:0%;
 }
 
 
