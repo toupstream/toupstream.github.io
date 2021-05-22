@@ -331,7 +331,7 @@ p {
 
 .sideImg {
   height: 20vh;
-  margin: -15vh 0;
+  margin: -15vh -5vh;
 }
 
 .playImg {
