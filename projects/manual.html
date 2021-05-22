@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+    <title>Manual</title>
+    
+    <link rel = "stylesheet" href = "manual.css">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    
+  </head>
+  <body>
+    <header class = "tittle">
+      <span><h1>THE MANUAL FOR CULTIVATING DIGITAL SPECIES</h1></span>
+    </header>
+    <section class="body">
+      <div class="nav">
+        <ul class="toc">
+          <li><p><a href = "#responding">01. Digital Leak Responding</a></p></li>
+          <li><p><a href = "#incubator">02. Digital Incubator</a></p></li>
+          <li><p><a href = "#ai">03. Digital Species</a></p></li>
+        </ul>
+        <!--<div class = "">-->
+          
+        <!--</div>-->
+      </div>
+      <div class = "content">
+        <div class= "img">
+          <div class = "skew">
+            <img class = "skewImg" src="Images/manual1.png" alt="Digital Incubator">
+          </div>
+        </div>
+        <div class="text">
+          <p><a name="responding">Digital Leak Responding</a><br><br>
+            It could have been neglected,  resulting in a simpler conclusion of this wired signal from the deep web. Since it first reacts, this digital leak has devoted to confuse audiences by sending out damaged data clutters. Efforts of investigation and renovation didn’t help much, unless you are convince by the "coming from future” hypothesis. A digital ruin from alternative timeline, such explanations has made nothing clear.</p><p>The connection to the digital leak has established but accessible content are still limited. Documented videos and photos can be found here and the live streaming will take place occasionally. Check out the right corner if you expect more documentation.
+          </p>
+          <p>
+            <br><a name="incubator">Digital Incubator</a><br><br>
+             The first discovered program in this digital leak is the digital incubator, a virtual space which inhabited with artificially intelligent species. Living in this incubator, these imaginary creatures can evolve their embedded artificial intelligence by interacting with the environment. Some believed it is a battleground for agents from different groups while some argue it is a research tool of artificial society. There is also an option to stop giving meaning and consider it as a digital fish tank for appreciation, contemplation and moment of abstract.<br><br> Creature <br> Many groups of creatures has presented in the incubator but not all of them are renovated and visualized. The current group is consisting of units, which exploit resources from the space and then return to their base.<br><br> Environment <br> Most elements in the environment can interact with the units. Oscillation is a floating waveform surface, it will push the overlapped units to a random direction. Implantation is a cluster of organic objects which will slightly grow. Precipitation is a pile of fragments that can be collected as resources. Diffusion is a group of dashed strings of cubes which are generated randomly and sprawl around itself before its incoming elimination. It releases energy packets that can charge for units when being picked up. Agitation is a group of microorganisms flocking in this virtual space. Annihilation is the colorful and blurry mist permeating in the virtual space like nebulae. Constructions can be built by spectators, which will affect the environment in the long term perspective.
+          </p>
+          <p>
+            <br><a name="ai">Digital Species</a><br><br>
+            Artificial society<br>
+                ██████████████████. ██████████████████████████████.
+            <br><br>
+            Communication<br>
+                ██████████████████ sign language████████????
+            <br>
+            ████████████████████████████████████
+            ██████████████████      
+          </p>
+          <span style = "position: fixed;padding-right:5%;"><h1  style = "font-weight: 300;font-size: 42pt; font-style: italic;">01</h1></span>
+        </div>
+      </div>
+      
+      <div class = "extraCrop">
+        <div class = "extra">
+          <div class = "extraImg">
+            <img class = "skewImg" src="Images/manual2.png" alt="Digital Incubator">
+          </div>
+          <div class = "extraTxt">
+            <div class = "extraTxtBlock">
+              <div><a href = "https://bora.uib.no/bora-xmlui/handle/11250/2755261" target="_blank">Thesis</a></div>
+              <div><a href = "gallery.html">Gallery</a></div>
+              <div><a href = "https://www.twitch.tv/digitalleak"><div><img src = "Images/corner2.png" style="width:35%;margin-left:3px;"></div> <div class = "live"><span>Live</span> <br><span>Streaming</span></div></a></div>
+              <div class = "vertical"><h2 >Manual</h2></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!--<div class = "extraLeftCrop">-->
+      <!--  <div class = "extraLeft">-->
+      <!--    <div>-->
+      <!--    </div>-->
+      <!--  </div>-->
+      <!--</div>-->
+      <div class = "extraLeftLogo">
+        <a href = "index.html" ><img style = "width:100%;position: absolute;bottom:0;" src="Images/logo.png" ></a>
+      </div>
+      
+      <div class = "leftCorner"></div>
+    </section>
+      <a href = "index.html" class = "navStar"><img class = "sideImg" src="Images/corner1.png" ></a>
+      <!--<a href = "https://www.twitch.tv/digitalleak" target="_blank" style = "position:absolute;color:#10cba1;left:25px;bottom:25px;font-size:8pt"><img class = "playImg" src="Images/corner2.png"><p style="float:left;margin:10px 0 0 20px">Live<br>Streaming</p></a>-->
+  
+      
+    
+    <!--<div class = "pop" style = "position:absolute;top:0;background-color:rgba(0,0,0,0.5);width:100%;height:100%"><p style = "color:#baddd9;text-align: center;margin:auto">Mobile not supported. Try horizontal :)</p></div>-->
+    <script>
+    var t = ['01','02','03'];
+      $('.text').scroll(function () {
+        $('.text a').each(function(i) {
+          var p = $(this).position().top;
+          var tp = $('.text').position().top;
+          // console.log(i+';'+p+'|'+tp);
+          if (p<tp+50){
+            // console.log(i+';'+p);
+            $('.text h1').html(t[i]);
+          }
+        // console.log(this.scrollTop);
+        });
+        // if (this.scrollTop > 100) {
+        //   $('h1').html('2');
+        // }
+      });
+    </script>
+  </body>
+</html>
