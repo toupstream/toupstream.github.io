@@ -3,53 +3,17 @@ html {
   height: 100%;
   overflow: hidden;
   width: 100%;
-  touch-action: none;
 }
 
 body {
   padding: 0;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  cursor: none;
+  /*cursor: none;*/
   height: 100%;
   width: 100%;
 }
 
-/*#tut{*/
-/*  display:none;*/
-/*}*/
-
-.tut{
-  display:block;
-  width:400px;
-  height:160px;
-  background:#aaa;
-  z-index:3;
-  text-align:center;
-}
-
-/*.tut .highlight{*/
-/*  background-color:#16748e;*/
-/*}*/
-
-.tut a {
-  /*color: #888;*/
-  color:#666;
-  /*background:#333;*/
-  text-decoration: none;
-  margin: 20px;
-  cursor: none;
-  /*font-size: calc(2.6vw+2pt);*/
-  /*font-size:16pt;*/
-  font-size:120%;
-  position: relative;
-  /*bottom:0.1vh;*/
-  font-weight: 700;
-}
-
-.tut .highlight{
-  color:#aaa;
-}
 
 /*canvas {*/
 
@@ -63,6 +27,7 @@ header {
   background-color: #333;
   /*height: 3.5vh;*/
   height: 3%;
+  width:100%;
   min-height: 20px;
   text-align: center;
   margin: 0;
@@ -76,6 +41,8 @@ header a {
   /*font-size:16pt;*/
   font-size:120%;
   position: relative;
+  display:block;
+  width:100%;
   /*bottom:0.1vh;*/
   font-weight: 700;
 }
@@ -88,11 +55,18 @@ header .selected{
   background-color:#666;
 }
 
+nav{
+  height:100%;
+  width:100%;
+}
+
 nav ul {
   /*padding: 0;*/
   margin: 0;
   /*margin: -0.15vw 0 0 0;*/
   display: flex;
+  width:100%;
+  height:100%;
   /*background: red;*/
   list-style-type: none;
 }
@@ -109,10 +83,15 @@ nav ul {
 
 /*}*/
 
-.highlight {
+.highlight{
   /*height:2vw;*/
-  background-color: #16748e;
+  background-color: #555;
 }
+
+/*.highlight:hover a:hover{*/
+  /*height:2vw;*/
+/*  background-color: #16748e;*/
+/*}*/
 
 .highlight .navTag {
   /*height:2vw;*/
@@ -130,7 +109,9 @@ nav li {
   margin: 0;
   /*margin: 0.2vw 0 0 0;*/
   /*padding:-10px;*/
-  width: 25%;
+  /*height:15%;*/
+  width:100%;
+  /*width: 25%;*/
   min-width:150px;
 }
 
@@ -152,8 +133,45 @@ nav li {
 
 }
 
+li:hover, #mail:hover{
+  background:#16748e;
+}
 
+li:hover a, li:hover span, #mail:hover a{
+  color:#ddd;
+  border-color:#bbb;
+}
 
+.beforeExpand a{
+  color: #bbb;
+  text-decoration: none;
+}
+
+.expand:hover a{
+  cursor:pointer;
+}
+
+.beforeExpand a:hover{
+  background:#16748e;
+}
+
+.beforeExpand:hover div{
+  background:#16748e;
+}
+
+.expand:hover div{
+  background:#333;
+  cursor:default;
+}
+
+/*.expand:hover li:hover a{*/
+/*  color:red;*/
+/*}*/
+
+.beforeExpand:hover div, .beforeExpand:hover h1{
+  color: #bbb;
+  cursor:pointer;
+}
 
 .catalog .expandText{
   display:none;
@@ -180,7 +198,6 @@ nav li {
 }
 
 .beforeExpand {
-  /*background-color: red;*/
   height: 25%;
 }
 
@@ -299,10 +316,9 @@ nav li {
   margin: 0;
   font-weight: 300;
   position: absolute;
-  left:10px;
-  bottom: 40px;
+  bottom: 4.5vh;
   /*padding:10vh 0 0 1vw;*/
-  font-size: 24pt;
+  font-size: 1.8vw;
   /*text-overflow:ellipsis;*/
   /*overflow: hidden;*/
 }
@@ -413,12 +429,12 @@ nav li {
 }
 
 .content a {
-  color: #888;
+  color: #777;
   font-style: Italic;
   margin-right: 1vw;
   text-decoration: none;
   font-size: 1.2vw;
-  font-weight: 500;
+  font-weight: 300;
   /*line-height:100%;*/
 }
 
@@ -501,10 +517,6 @@ nav li {
   font-size: 28pt;
   color: #ccc;
   width: 40%;
-}
-
-.moretext p{
-  font-size: 18pt;
 }
 
 
@@ -603,17 +615,11 @@ nav li {
   .expand .expandText{
     font-size: 14pt;
   }
-  .leftspan p{
-    font-size:20pt;
-  }
 }
 
 @media screen and (max-width:1000px){
   .projectContent p {
     font-size: 20pt;
-  }
-  .moretext p{
-    font-size: 12pt;
   }
   .projectContent h1 {
     /*font-weight: 400;*/
@@ -647,17 +653,11 @@ nav li {
   .showcase img {
     margin-left:-80px;
   }
-  .leftspan p{
-    font-size:12pt;
-  }
 }
 
 @media screen and (max-width:600px){
   .projectContent p {
     font-size: 14pt;
-  }
-  .moretext p{
-  font-size: 8pt;
   }
   .projectContent h1 {
     /*font-weight: 400;*/
@@ -740,6 +740,7 @@ footer {
 footer ul {
   list-style-type: none;
   display: flex;
+  width:20%;
   /*position:relative;*/
   /*bottom:1vh;*/
   float: right;
@@ -760,11 +761,14 @@ footer ul {
 
 footer a {
   color: #777;
+  /*width:50%;*/
+  /*display:inline-block;*/
   text-decoration: none;
 }
 
 footer span {
   margin-left: 20vw;
+  /*width:60%;*/
 }
 
 footer ul span {
