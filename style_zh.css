@@ -3,14 +3,13 @@ html {
   height: 100%;
   overflow: hidden;
   width: 100%;
-  touch-action: none;
 }
 
 body {
   padding: 0;
   margin: 0;
   font-family: 'Montserrat', sans-serif;
-  cursor: none;
+  /*cursor: none;*/
   height: 100%;
   width: 100%;
 }
@@ -28,6 +27,7 @@ header {
   background-color: #333;
   /*height: 3.5vh;*/
   height: 3%;
+  width:100%;
   min-height: 20px;
   text-align: center;
   margin: 0;
@@ -43,6 +43,8 @@ header a {
   position: relative;
   /*bottom:0.1vh;*/
   font-weight: 500;
+  display:block;
+  width:100%;
 }
 
 header li.highlight{
@@ -53,11 +55,18 @@ header .selected{
   background-color:#666;
 }
 
+nav{
+  height:100%;
+  width:100%;
+}
+
 nav ul {
   /*padding: 0;*/
   margin: 0;
   /*margin: -0.15vw 0 0 0;*/
   display: flex;
+  width:100%;
+  height:100%;
   /*background: red;*/
   list-style-type: none;
 }
@@ -120,6 +129,48 @@ nav li {
   /*  font-size:100%;*/
   /*}*/
 }
+
+
+li:hover, #mail:hover{
+  background:#16748e;
+}
+
+li:hover a, li:hover span, #mail:hover a{
+  color:#ddd;
+  border-color:#bbb;
+}
+
+.beforeExpand a{
+  color: #bbb;
+  text-decoration: none;
+}
+
+.expand:hover a{
+  cursor:pointer;
+}
+
+.beforeExpand a:hover{
+  background:#16748e;
+}
+
+.beforeExpand:hover div{
+  background:#16748e;
+}
+
+.expand:hover div{
+  background:#333;
+  cursor:default;
+}
+
+/*.expand:hover li:hover a{*/
+/*  color:red;*/
+/*}*/
+
+.beforeExpand:hover div, .beforeExpand:hover h1{
+  color: #bbb;
+  cursor:pointer;
+}
+
 .catalog .expandText{
   display:none;
 }
@@ -463,12 +514,9 @@ nav li {
   position: absolute;
   /*margin: 0;*/
   font-weight: 300;
-  font-size: 26pt;
+  font-size: 2.5vw;
   color: #ccc;
   width: 30%;
-}
-.moretext p{
-  font-size: 16pt;
 }
 
 .projectContent h1 {
@@ -549,9 +597,6 @@ nav li {
   .projectContent p {
     font-size: 20pt;
   }
-  .moretext p{
-    font-size: 10pt;
-  }
   .projectContent h1 {
     /*font-weight: 400;*/
     font-size: 32pt;
@@ -589,9 +634,6 @@ nav li {
 @media screen and (max-width:600px){
   .projectContent p {
     font-size: 14pt;
-  }
-  .moretext p{
-    font-size: 8pt;
   }
   .projectContent h1 {
     /*font-weight: 400;*/

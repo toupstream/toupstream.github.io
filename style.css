@@ -505,31 +505,52 @@ li:hover a, li:hover span, #mail:hover a{
   opacity: 0;
 }
 
+.projectContent{
+  width:30%;
+  /*background:black;*/
+  background:#444;
+  height:100%;
+  display:inline-block;
+}
 
+.projectContent a{
+ cursor:pointer; 
+ /*font-size:10vh;*/
+ color:#aaa;
+ /*font-weight:400;*/
+}
 
 .projectContent p {
   margin: 0;
+  width:100%;
+  height:75%;
+  overflow:auto;
   /*top: 24vh;*/
   left: 4.2vw;
-  position: absolute;
+  /*position: absolute;*/
   /*margin: 0;*/
   font-weight: 400;
   font-size: 28pt;
   color: #ccc;
-  width: 40%;
+  /*width: 40%;*/
 }
 
+.projectContent a:hover li{
+  background:#16748e;
+}
 
 .projectContent h1 {
   margin: 0;
-  left: 4.2vw;
-  bottom:16vh;
-  position: absolute;
+  /*left: 4.2vw;*/
+  /*bottom:16vh;*/
+  font-style:normal;
+  bottom:10vh;
+  position: fixed;
   font-weight: 500;
   font-size: 42pt;
   letter-spacing:-2px;
   color: #aaa;
-  width: 40%;
+  /*width: 40%;*/
   /*text-shadow:5px -2px 5px #555;*/
   /*border: 1px solid #999;*/
   /*-webkit-text-stroke: 1px #bbb;*/
@@ -560,7 +581,8 @@ li:hover a, li:hover span, #mail:hover a{
 .picture {
   /*overflow:hidden;*/
   white-space: nowrap;
-  margin-left: 35vw;
+  /*margin-left: 35vw;*/
+  /*height:100%;*/
   /*width:10%;*/
   /*position:relative;*/
   /*display:inline-flex;*/
@@ -568,19 +590,25 @@ li:hover a, li:hover span, #mail:hover a{
 }
 
 .showcase {
-  height: 60vh;
-  /*width:50%;*/
+  /*height: 60vh;*/
+  width:70%;
+  height:100%;
+  overflow:auto;
+  /*display:inline-block;*/
+  float:right;
   /*display:inline-flex;*/
-  background-color: #333;
-  margin: 10vh 0 0 10vw;
+  /*background-color: #333;*/
+  /*margin: 10vh 0 0 10vw;*/
 }
 
 .showcase img {
   /*float:right;*/
   /*margin-left:-5.6vw;*/
-  height: 60vh;
+  /*height: 60vh;*/
+  width:100%;
   /*margin:0;*/
-  margin: 0 0 0 -10vw;
+  display:block;
+  /*margin: 0 0 0 -10vw;*/
   /*position:static;*/
 }
 
